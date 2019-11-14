@@ -1,15 +1,20 @@
 import React from 'react'
+// import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 
-const Footer = () => {
+const MoreInfo = () => {
   return (
     <div>
-      <hr />
+      {/* <hr /> */}
       <footer>
-        <Link to="moreinfo">More Info</Link>
+        <Link to="/moreinfo">
+          <small>More Info</small>
+        </Link>
+
+        {/* <Link to="moreinfo">More Info</Link> */}
       </footer>
     </div>
   )
 }
 
-export default Footer
+export default MoreInfo

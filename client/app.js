@@ -1,6 +1,5 @@
 import React from 'react'
-
-import {Navbar, Footer} from './components'
+import {Navbar, MoreInfo} from './components'
 import Routes from './routes'
 
 const App = () => {
@@ -8,7 +7,7 @@ const App = () => {
     <div>
       <Navbar />
       <Routes />
-      <Footer />
+      <MoreInfo />
     </div>
   )
 }

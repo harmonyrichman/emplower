@@ -7,10 +7,11 @@ import {
   Signup,
   UserHome,
   HomePage,
-  FairChance,
-  Article23a,
-  NextSteps,
-  Employer
+  MoreInfo
+  // FairChance,
+  // Article23a,
+  // NextSteps,
+  // Employer
 } from './components'
 import {me} from './store'
 
@@ -28,13 +29,17 @@ class Routes extends Component {
     return (
       <Switch>
         {/* Routes placed here are available to all visitors */}
+        <Route exact path="/" component={HomePage} />
+        <Route path="/homepage" component={HomePage} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
-        <Route path="/homepage" component={HomePage} />
+        <Route path="/moreinfo" component={MoreInfo} />
+
+        {/*
         <Route path="/fairchanceact" component={FairChance} />
         <Route path="/article23a" component={Article23a} />
         <Route path="/nextsteps" component={NextSteps} />
-        <Route path="/employerchecklist" component={Employer} />
+        <Route path="/employerchecklist" component={Employer} /> */}
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}
