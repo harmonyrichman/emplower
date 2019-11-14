@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 const MoreInfo = () => {
   return (
-    <div>
+    <div className="moreinfo">
       {/* <hr /> */}
       <footer>
         <Link to="/moreinfo">
