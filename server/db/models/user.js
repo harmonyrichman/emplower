@@ -3,10 +3,28 @@ const Sequelize = require('sequelize')
 const db = require('../db')
 
 const User = db.define('user', {
+  firstName: {
+    type: Sequelize.STRING,
+    allowNull: false,
+    validate: {
+      notEmpty: true
+    }
+  },
+  lastName: {
+    type: Sequelize.STRING,
+    allowNull: false,
+    validate: {
+      notEmpty: true
+    }
+  },
   email: {
     type: Sequelize.STRING,
     unique: true,
-    allowNull: false
+    allowNull: false,
+    validate: {
+      notEmpty: true,
+      isEmail: true
+    }
   },
   password: {
     type: Sequelize.STRING,
@@ -26,6 +44,38 @@ const User = db.define('user', {
   },
   googleId: {
     type: Sequelize.STRING
+  },
+  residency: {
+    type: Sequelize.STRING(1234),
+    allowNull: true
+  },
+  jobDuties: {
+    type: Sequelize.STRING(1234),
+    allowNull: true
+  },
+  related: {
+    type: Sequelize.STRING(1234),
+    allowNull: true
+  },
+  timeElapsed: {
+    type: Sequelize.STRING(1234),
+    allowNull: true
+  },
+  ageAtCommit: {
+    type: Sequelize.STRING(1234),
+    allowNull: true
+  },
+  serious: {
+    type: Sequelize.STRING(1234),
+    allowNull: true
+  },
+  rehab: {
+    type: Sequelize.STRING(1234),
+    allowNull: true
+  },
+  safetyIssue: {
+    type: Sequelize.STRING(1234),
+    allowNull: true
   }
 })
 
