@@ -50,6 +50,27 @@ export const auth = (
   }
 
   try {
+    console.log('RESDATA=>', res.data)
+    dispatch(getUser(res.data))
+    history.push('/home')
+  } catch (dispatchOrHistoryErr) {
+    console.error(dispatchOrHistoryErr)
+  }
+}
+
+export const authLog = (email, password, method) => async dispatch => {
+  let res
+  try {
+    res = await axios.post(`/auth/${method}`, {
+      email,
+      password
+    })
+  } catch (authError) {
+    return dispatch(getUser({error: authError}))
+  }
+
+  try {
+    // console.log('RESDATA=>', res)
     dispatch(getUser(res.data))
     history.push('/home')
   } catch (dispatchOrHistoryErr) {
@@ -73,6 +94,9 @@ export const logout = () => async dispatch => {
 export default function(state = defaultUser, action) {
   switch (action.type) {
     case GET_USER:
+      // console.log('action===>', action)
+      // console.log('state ====>', state)
+      // console.log('user===>', action.user)
       return action.user
     case REMOVE_USER:
       return defaultUser
