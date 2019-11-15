@@ -29,7 +29,10 @@ form div {
 }
 
 .moreinfo {
+  /* align-self: flex-end;
+  flex: 1; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 

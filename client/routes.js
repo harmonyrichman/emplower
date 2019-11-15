@@ -7,8 +7,8 @@ import {
   Signup,
   UserHome,
   HomePage,
-  MoreInfo
-  // FairChance,
+  MoreInfo,
+  FairChance
   // Article23a,
   // NextSteps,
   // Employer
@@ -33,10 +33,11 @@ class Routes extends Component {
         <Route path="/homepage" component={HomePage} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
+        <Route path="/fairchanceact" component={FairChance} />
         <Route path="/moreinfo" component={MoreInfo} />
 
         {/*
-        <Route path="/fairchanceact" component={FairChance} />
+
         <Route path="/article23a" component={Article23a} />
         <Route path="/nextsteps" component={NextSteps} />
         <Route path="/employerchecklist" component={Employer} /> */}
