@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const Employer = () => {
   return (
@@ -41,13 +41,10 @@ const Employer = () => {
         </li>
       </ol>
       <div>
-        {/* <NextSteps /> */}
         <Link to="/nextsteps">
-          <div>
-            <button type="button">
-              If you think your rights have been violated
-            </button>
-          </div>
+          <button type="button">
+            If you think your rights have been violated
+          </button>
         </Link>
       </div>
     </div>
