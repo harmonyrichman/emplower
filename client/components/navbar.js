@@ -7,8 +7,10 @@ import {logout} from '../store'
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div className="navbar">
     <Link to="/homepage">
-      {' '}
+      {/* {' '} */}
       <h1 className="heading">EMPLOWER</h1>
+
+      <h3 className="subtext">Empowered & Employed</h3>
     </Link>
 
     <nav>
@@ -19,8 +21,8 @@ const Navbar = ({handleClick, isLoggedIn}) => (
           {/* <Link to="/homepage">Home Page</Link> */}
           <Link to="/fairchanceact">The Fair Chance Act</Link>
           <Link to="/article23a">Article 23-A</Link>
-          <Link to="/nextsteps">What You Can Do</Link>
           <Link to="/employerchecklist">Employer Checklist</Link>
+          <Link to="/nextsteps">What You Can Do</Link>
           <Link to="/home">Home</Link>
           <a href="#" onClick={handleClick}>
             Logout

@@ -7,10 +7,11 @@ import {
   Signup,
   UserHome,
   HomePage,
-  MoreInfo
-  // FairChance,
-  // Article23a,
-  // NextSteps,
+  MoreInfo,
+  FairChance,
+  Article23a,
+  Employer,
+  NextSteps
   // Employer
 } from './components'
 import {me} from './store'
@@ -33,13 +34,12 @@ class Routes extends Component {
         <Route path="/homepage" component={HomePage} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
-        <Route path="/moreinfo" component={MoreInfo} />
-
-        {/*
         <Route path="/fairchanceact" component={FairChance} />
+        <Route path="/moreinfo" component={MoreInfo} />
         <Route path="/article23a" component={Article23a} />
+        <Route path="/employerchecklist" component={Employer} />
         <Route path="/nextsteps" component={NextSteps} />
-        <Route path="/employerchecklist" component={Employer} /> */}
+
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}
