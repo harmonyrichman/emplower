@@ -37,10 +37,6 @@ form div {
 }
 
 /* NAVBAR START */
-.navbar .heading {
-  font-family: chalkduster;
-  font-size: 50px;
-}
 
 .navbar {
   display: flex;
@@ -48,13 +44,23 @@ form div {
   font-size: 15px;
   margin: 5px;
 }
+
+.navbar .heading {
+  font-family: chalkduster;
+  font-size: 50px;
+}
+
+.subtext {
+  font-family: Didot;
+  font-size: 23px;
+  color: #eff7e9;
+}
 /* NAVBAR END */
 
 /* HOMEPAGE START */
-/* .hompage {
-
-   display: block
-} */
+.hompage {
+  display: inline-flex;
+}
 
 .homepage img {
   width: 38%;
@@ -62,3 +68,9 @@ form div {
 }
 
 /* HOMEPAGE END */
+
+/* ARTICLE 23A */
+
+/* colors to save:
+ #5883a6
+ */

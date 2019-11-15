@@ -3,6 +3,7 @@ import React from 'react'
 const HomePage = () => {
   return (
     <div className="homepage">
+      <hr />
       <img src="https://static.thenounproject.com/png/57060-200.png" />
     </div>
   )

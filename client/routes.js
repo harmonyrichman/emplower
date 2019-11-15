@@ -8,8 +8,8 @@ import {
   UserHome,
   HomePage,
   MoreInfo,
-  FairChance
-  // Article23a,
+  FairChance,
+  Article23a
   // NextSteps,
   // Employer
 } from './components'
@@ -35,10 +35,11 @@ class Routes extends Component {
         <Route path="/signup" component={Signup} />
         <Route path="/fairchanceact" component={FairChance} />
         <Route path="/moreinfo" component={MoreInfo} />
+        <Route path="/article23a" component={Article23a} />
 
         {/*
 
-        <Route path="/article23a" component={Article23a} />
+
         <Route path="/nextsteps" component={NextSteps} />
         <Route path="/employerchecklist" component={Employer} /> */}
         {isLoggedIn && (

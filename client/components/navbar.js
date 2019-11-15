@@ -7,8 +7,10 @@ import {logout} from '../store'
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div className="navbar">
     <Link to="/homepage">
-      {' '}
+      {/* {' '} */}
       <h1 className="heading">EMPLOWER</h1>
+
+      <h3 className="subtext">Empower to Employ | Employ to Empower</h3>
     </Link>
 
     <nav>
