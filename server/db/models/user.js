@@ -45,6 +45,14 @@ const User = db.define('user', {
   googleId: {
     type: Sequelize.STRING
   },
+  company: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
+  position: {
+    type: Sequelize.STRING,
+    allowNull: true
+  },
   residency: {
     type: Sequelize.STRING(1234),
     allowNull: true
