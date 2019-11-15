@@ -1,5 +1,12 @@
 body {
   font-family: sans-serif;
+  background-color: #d6e7c0;
+  color: #496426 !important;
+}
+body a {
+  font-family: sans-serif;
+  background-color: #d6e7c0;
+  color: #496426 !important;
 }
 
 a {
@@ -13,9 +20,42 @@ label {
 nav a {
   display: inline-block;
   margin: 1em;
+  color: #496426 !important;
 }
 
 form div {
   margin: 1em;
   display: inline-block;
 }
+
+.moreinfo {
+  display: flex;
+  justify-content: center;
+}
+
+/* NAVBAR START */
+.navbar .heading {
+  font-family: chalkduster;
+  font-size: 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: 5px;
+}
+/* NAVBAR END */
+
+/* HOMEPAGE START */
+/* .hompage {
+
+   display: block
+} */
+
+.homepage img {
+  width: 38%;
+  height: auto;
+}
+
+/* HOMEPAGE END */
