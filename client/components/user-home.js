@@ -19,6 +19,12 @@ export const UserHome = props => {
           <h4>Start Your Own Letter Now!</h4>
         </Link>
       </div>
+
+      <div>
+        <Link to="/letter">
+          <h4>View Your Letter</h4>
+        </Link>
+      </div>
     </div>
   )
 }
