@@ -26,10 +26,8 @@ const updateUser = () => ({type: UPDATE_USER})
 
 export const updatedUser = user => async dispatch => {
   try {
-    console.log('USER', user)
-    const {data} = await axios.put(`/api/users/checkout`) // THIS PUT ROUTE MUST BE UPDATED)
-    console.log('DATA==>', data)
-    dispatch(updatedUser(data))
+    const {data} = await axios.put(`/api/users/checklist`, user)
+    dispatch(updateUser(data))
   } catch (error) {
     console.error('We cannot find your account because: ', error)
   }
@@ -64,7 +62,6 @@ export const auth = (
   }
 
   try {
-    // console.log('RESDATA=>', res.data)
     dispatch(getUser(res.data))
     history.push('/home')
   } catch (dispatchOrHistoryErr) {
@@ -84,7 +81,6 @@ export const authLog = (email, password, method) => async dispatch => {
   }
 
   try {
-    // console.log('RESDATA=>', res)
     dispatch(getUser(res.data))
     history.push('/home')
   } catch (dispatchOrHistoryErr) {
