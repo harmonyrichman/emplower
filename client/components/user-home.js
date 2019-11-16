@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 
 /**
  * COMPONENT
@@ -13,6 +14,11 @@ export const UserHome = props => {
       <h3>
         Welcome, {firstName} {lastName}
       </h3>
+      <div>
+        <Link to="/checklist">
+          <h4>Start Your Own Letter Now!</h4>
+        </Link>
+      </div>
     </div>
   )
 }
