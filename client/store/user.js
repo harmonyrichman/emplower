@@ -6,6 +6,7 @@ import history from '../history'
  */
 const GET_USER = 'GET_USER'
 const REMOVE_USER = 'REMOVE_USER'
+const UPDATE_USER = 'UPDATE_USER'
 
 /**
  * INITIAL STATE
@@ -17,10 +18,21 @@ const defaultUser = {}
  */
 const getUser = user => ({type: GET_USER, user})
 const removeUser = () => ({type: REMOVE_USER})
+const updateUser = () => ({type: UPDATE_USER})
 
 /**
  * THUNK CREATORS
  */
+
+export const updatedUser = user => async dispatch => {
+  try {
+    const {data} = await axios.put(`/api/users/checklist`, user)
+    dispatch(updateUser(data))
+  } catch (error) {
+    console.error('We cannot find your account because: ', error)
+  }
+}
+
 export const me = () => async dispatch => {
   try {
     const res = await axios.get('/auth/me')
@@ -50,7 +62,6 @@ export const auth = (
   }
 
   try {
-    console.log('RESDATA=>', res.data)
     dispatch(getUser(res.data))
     history.push('/home')
   } catch (dispatchOrHistoryErr) {
@@ -70,7 +81,6 @@ export const authLog = (email, password, method) => async dispatch => {
   }
 
   try {
-    // console.log('RESDATA=>', res)
     dispatch(getUser(res.data))
     history.push('/home')
   } catch (dispatchOrHistoryErr) {
@@ -94,12 +104,12 @@ export const logout = () => async dispatch => {
 export default function(state = defaultUser, action) {
   switch (action.type) {
     case GET_USER:
-      // console.log('action===>', action)
-      // console.log('state ====>', state)
-      // console.log('user===>', action.user)
       return action.user
     case REMOVE_USER:
       return defaultUser
+    case UPDATE_USER:
+      console.log('REDUCER', action.user)
+      return action.user
     default:
       return state
   }

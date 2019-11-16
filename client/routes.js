@@ -11,8 +11,8 @@ import {
   FairChance,
   Article23a,
   Employer,
-  NextSteps
-  // Employer
+  NextSteps,
+  Checklist
 } from './components'
 import {me} from './store'
 
@@ -44,6 +44,7 @@ class Routes extends Component {
           <Switch>
             {/* Routes placed here are only available after logging in */}
             <Route path="/home" component={UserHome} />
+            <Route path="/checklist" component={Checklist} />
           </Switch>
         )}
         {/* Displays our Login component as a fallback */}
