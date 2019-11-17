@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {updatedUser} from '../store'
+import {Link} from 'react-router-dom'
 
 class Checklist extends Component {
   constructor(props) {
@@ -211,7 +212,9 @@ class Checklist extends Component {
           </div>
 
           <div>
-            <button type="submit">Are you done? Submit Now!</button>
+            <Link to="/letter">
+              <button type="submit">Are you done? Submit Now!</button>
+            </Link>
           </div>
         </form>
       </div>

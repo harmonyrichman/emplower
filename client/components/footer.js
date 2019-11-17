@@ -7,9 +7,7 @@ const MoreInfo = () => {
     <div className="moreinfo">
       {/* <hr /> */}
       <footer>
-        <Link to="/moreinfo">
-          <small>More Info</small>
-        </Link>
+        <img src="https://myrealdomain.com/images/decorative-symbols-clipart-8.png" />
 
         {/* <Link to="moreinfo">More Info</Link> */}
       </footer>

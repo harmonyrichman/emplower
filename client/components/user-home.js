@@ -16,7 +16,7 @@ export const UserHome = props => {
       </h3>
       <div>
         <Link to="/checklist">
-          <h4>Start Your Own Letter Now!</h4>
+          <h4>Create A Letter!</h4>
         </Link>
       </div>
 
