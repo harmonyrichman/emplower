@@ -1,14 +1,13 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
+// import Axios from 'axios';
 import {updatedUser} from '../store'
-import {Link} from 'react-router-dom'
 
 class Checklist extends Component {
   constructor(props) {
     super(props)
     console.log('PROPS', props)
     this.state = {
-      date: '',
       company: '',
       position: '',
       residency: '',
@@ -36,7 +35,6 @@ class Checklist extends Component {
     console.log('clicked!')
     this.props.updatedUser(this.state)
     this.setState({
-      date: '',
       company: '',
       position: '',
       residency: '',
@@ -63,16 +61,6 @@ class Checklist extends Component {
 
         <form onSubmit={this.handleSubmit}>
           <div>
-            <h4>Today's Date</h4>
-            <input
-              type="text"
-              name="date"
-              placeholder="Month Day, Year"
-              value={this.state.date}
-              onChange={this.handleChange}
-            />
-            <br />
-            <br />
             <h4>The company you are applying to:</h4>
             <input
               type="text"
@@ -212,9 +200,7 @@ class Checklist extends Component {
           </div>
 
           <div>
-            <Link to="/letter">
-              <button type="submit">Are you done? Submit Now!</button>
-            </Link>
+            <button type="submit">Are you done? Submit Now!</button>
           </div>
         </form>
       </div>

@@ -40,9 +40,9 @@ form div {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 15px;
-  margin: auto;
+  margin: 5px;
 }
 
 .navbar .heading {
@@ -58,30 +58,18 @@ form div {
 /* NAVBAR END */
 
 /* HOMEPAGE START */
-/* .hompage {
-
-} */
-
-.homepage img {
-  width: 30%;
-  height: auto;
-  margin: auto;
-  display: flex;
-  justify-content: center;
+.hompage {
+  display: inline-flex;
 }
 
-/* #input {
-  width: ;
-} */
+.homepage img {
+  width: 38%;
+  height: auto;
+}
 
 /* HOMEPAGE END */
 
 /* ARTICLE 23A */
-
-.moreinfo img {
-  width: 2em;
-  height: 3em;
-}
 
 /* colors to save:
  #5883a6

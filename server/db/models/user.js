@@ -45,10 +45,6 @@ const User = db.define('user', {
   googleId: {
     type: Sequelize.STRING
   },
-  date: {
-    type: Sequelize.STRING,
-    allowNull: true
-  },
   company: {
     type: Sequelize.STRING,
     allowNull: true
