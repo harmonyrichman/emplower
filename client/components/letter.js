@@ -39,53 +39,86 @@ const Letter = props => {
       </p>
 
       <p>
-        <div>
-          I believe I am a great fit for the {position} position. {jobDuties}
-        </div>
+        {jobDuties ? (
+          <div>
+            I believe I am a great fit for the {position} position. {jobDuties}
+          </div>
+        ) : (
+          <div />
+        )}
       </p>
 
       <p>
-        <div>
-          I understand that there might be concerns about my fitness in this
-          position given my history. However, the {position} position and its
-          responsibilities do not intersect with the charge and will have no
-          bearing on my ability to operate successfully. {related}
-        </div>
+        {related ? (
+          <div>
+            I understand that there might be concerns about my fitness in this
+            position given my history. However, the {position} position and its
+            responsibilities do not intersect with the charge and will have no
+            bearing on my ability to operate successfully. {related}
+          </div>
+        ) : (
+          <div />
+        )}
       </p>
 
       <p>
-        <div>
-          Furthermore, I was in a very different state when the offense occured.{' '}
-          {timeElapsed} {ageAtCommit}
-        </div>
+        {timeElapsed && ageAtCommit ? (
+          <div>
+            Furthermore, I was in a very different state when the offense
+            occured. {timeElapsed} {ageAtCommit}
+          </div>
+        ) : (
+          <div />
+        )}
       </p>
 
       <p>
-        <div>
-          I know that a big objective of Article 23-A of The Fair Chance Act is
-          to allow an opportunity to provide context around a conviction and
-          allow the situation to be understood in its entirety. {serious}
-        </div>
+        {serious ? (
+          <div>
+            I know that a big objective of Article 23-A of The Fair Chance Act
+            is to allow an opportunity to provide context around a conviction
+            and allow the situation to be understood in its entirety. {serious}
+          </div>
+        ) : (
+          <div />
+        )}
       </p>
 
       <p>
-        <div>
-          I have been working to move my life in a direction that I believe is
-          more representative of who I am. {rehab} All of these factors
-          demonstrate the growth I've experienced since the offense.
-        </div>
+        {rehab ? (
+          <div>
+            I have been working to move my life in a direction that I believe is
+            more representative of who I am. {rehab} All of these factors
+            demonstrate the growth I've experienced since the offense.
+          </div>
+        ) : (
+          <div />
+        )}
       </p>
 
       <p>
-        <div>
-          I hope this letter has provided more clarity and insight into who I am
-          and how I've grown as a person. {safetyIssues} I am confident that I
-          will be a great {position} and that I can contribute to the overall
-          success at {company}. Please don't hesitate to reach me at {email} if
-          you have any further questions. Thank you again for taking the time to
-          read this letter and allowing me the opportunity to show why I'd be a
-          great addition to your team.
-        </div>
+        {safetyIssues ? (
+          <div>
+            I hope this letter has provided more clarity and insight into who I
+            am and how I've grown as a person. {safetyIssues} I am confident
+            that I will be a great {position} and that I can contribute to the
+            overall success at {company}. Please don't hesitate to reach me at{' '}
+            {email} if you have any further questions. Thank you again for
+            taking the time to read this letter and allowing me the opportunity
+            to show why I'd be a great addition to your team.
+          </div>
+        ) : (
+          <div>
+            {' '}
+            I hope this letter has provided more clarity and insight into who I
+            am and how I've grown as a person.I am confident that I will be a
+            great {position} and that I can contribute to the overall success at{' '}
+            {company}. Please don't hesitate to reach me at {email} if you have
+            any further questions. Thank you again for taking the time to read
+            this letter and allowing me the opportunity to show why I'd be a
+            great addition to your team.
+          </div>
+        )}
       </p>
 
       <div align="left">
