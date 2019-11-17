@@ -11,7 +11,6 @@ class Checklist extends Component {
       date: '',
       company: '',
       position: '',
-      residency: '',
       jobDuties: '',
       related: '',
       timeElapsed: '',
@@ -39,7 +38,6 @@ class Checklist extends Component {
       date: '',
       company: '',
       position: '',
-      residency: '',
       jobDuties: '',
       related: '',
       timeElapsed: '',
@@ -212,9 +210,9 @@ class Checklist extends Component {
           </div>
 
           <div>
-            <Link to="/letter">
-              <button type="submit">Are you done? Submit Now!</button>
-            </Link>
+            {/* <Link to="/letter"> */}
+            <button type="submit">Are you done? Submit Now!</button>
+            {/* </Link> */}
           </div>
         </form>
       </div>

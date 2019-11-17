@@ -14,7 +14,7 @@ const Letter = props => {
     ageAtCommit,
     serious,
     rehab,
-    safetyIssues,
+    safetyIssue,
     email
   } = props
   return (
@@ -97,11 +97,11 @@ const Letter = props => {
       </p>
 
       <p>
-        {safetyIssues ? (
+        {safetyIssue ? (
           <div>
             I hope this letter has provided more clarity and insight into who I
-            am and how I've grown as a person. {safetyIssues} I am confident
-            that I will be a great {position} and that I can contribute to the
+            am and how I've grown as a person. {safetyIssue} I am confident that
+            I will be a great {position} and that I can contribute to the
             overall success at {company}. Please don't hesitate to reach me at{' '}
             {email} if you have any further questions. Thank you again for
             taking the time to read this letter and allowing me the opportunity
@@ -109,7 +109,6 @@ const Letter = props => {
           </div>
         ) : (
           <div>
-            {' '}
             I hope this letter has provided more clarity and insight into who I
             am and how I've grown as a person.I am confident that I will be a
             great {position} and that I can contribute to the overall success at{' '}
@@ -144,7 +143,7 @@ const mapState = state => {
     ageAtCommit: state.user.ageAtCommit,
     serious: state.user.serious,
     rehab: state.user.rehab,
-    safetyIssues: state.user.safetyIssues,
+    safetyIssue: state.user.safetyIssue,
     email: state.user.email
   }
 }
