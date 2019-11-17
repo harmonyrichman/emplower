@@ -36,6 +36,7 @@ router.get('/:id', async (req, res, next) => {
 })
 
 router.put('/checklist', async (req, res, next) => {
+  console.log('API ROUTE?!?!?!')
   try {
     const userId = req.user.id
     const updatedUser = await User.update(req.body, {
