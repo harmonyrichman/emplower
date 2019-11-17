@@ -40,9 +40,9 @@ form div {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 15px;
-  margin: 5px;
+  margin: auto;
 }
 
 .navbar .heading {
@@ -58,18 +58,30 @@ form div {
 /* NAVBAR END */
 
 /* HOMEPAGE START */
-.hompage {
-  display: inline-flex;
-}
+/* .hompage {
+
+} */
 
 .homepage img {
-  width: 38%;
+  width: 30%;
   height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
+
+/* #input {
+  width: ;
+} */
 
 /* HOMEPAGE END */
 
 /* ARTICLE 23A */
+
+.moreinfo img {
+  width: 2em;
+  height: 3em;
+}
 
 /* colors to save:
  #5883a6
