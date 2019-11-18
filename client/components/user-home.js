@@ -10,19 +10,19 @@ export const UserHome = props => {
   const {firstName, lastName, email} = props
 
   return (
-    <div>
-      <h3>
-        Welcome, {firstName} {lastName}
-      </h3>
-      <div>
+    <div className="userHome">
+      <h1>
+        Welcome back, {firstName} {lastName}!
+      </h1>
+      <br />
+      <br />
+      <div id="boxes">
         <Link to="/checklist">
-          <h4>Create A Letter!</h4>
+          <h3>Create A New Letter</h3>
         </Link>
-      </div>
 
-      <div>
         <Link to="/letter">
-          <h4>View Your Letter</h4>
+          <h3>View Your Letter</h3>
         </Link>
       </div>
     </div>

@@ -1,10 +1,16 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const HomePage = () => {
   return (
-    <div className="homepage">
+    <div>
       <hr />
-      <img src="https://static.thenounproject.com/png/57060-200.png" />
+      <div className="homepage">
+        <Link to="/fairchanceact">
+          <h1>Let's Get Started!</h1>
+        </Link>
+        <img src="https://static.thenounproject.com/png/57060-200.png" />
+      </div>
     </div>
   )
 }

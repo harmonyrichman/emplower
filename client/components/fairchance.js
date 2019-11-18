@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 const FairChance = () => {
   return (
     <div className="fairchance">
@@ -48,8 +48,11 @@ const FairChance = () => {
         </ul>
         <h4>
           You do NOT need to report any of the above- it is your own private
-          information. KNOW YOUR RIGHTS!
+          information.
         </h4>
+        <Link to="/article23a">
+          <button type="button">Know Your Rights!</button>
+        </Link>
       </p>
     </div>
   )

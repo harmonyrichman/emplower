@@ -1,5 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {Link} from 'react-router-dom'
 
 const Letter = props => {
   const {
@@ -18,7 +19,9 @@ const Letter = props => {
     email
   } = props
   return (
-    <div>
+    <div className="letter">
+      <h1>Your Freshly Generated Letter:</h1>
+      <hr />
       <div align="right">
         <h5>{date}</h5>
       </div>
@@ -126,6 +129,19 @@ const Letter = props => {
         <br />
         {firstName} {lastName}
       </div>
+      <br />
+      <br />
+      <br />
+      <Link to="/checklist">
+        <button type="button">Create a New Letter</button>
+      </Link>
+      <br />
+      <br />
+      <br />
+      <br />
+      <Link to="/employerchecklist">
+        <button type="button">I have my letter. What's next?</button>
+      </Link>
     </div>
   )
 }

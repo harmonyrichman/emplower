@@ -50,7 +50,7 @@ class Checklist extends Component {
 
   render() {
     return (
-      <div>
+      <div className="checklist">
         <h1>Create Your Letter</h1>
         <h3>
           Please fill out each piece that is relevant to you. Remember- this is
@@ -210,9 +210,14 @@ class Checklist extends Component {
           </div>
 
           <div>
-            {/* <Link to="/letter"> */}
             <button type="submit">Are you done? Submit Now!</button>
-            {/* </Link> */}
+            <br />
+            <br />
+            <br />
+
+            <Link to="/letter">
+              <button type="submit">View Your Letter!</button>
+            </Link>
           </div>
         </form>
       </div>

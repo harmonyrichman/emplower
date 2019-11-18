@@ -2,8 +2,8 @@ import React from 'react'
 
 const NextSteps = () => {
   return (
-    <div>
-      <h1>You feel your rights have been violated. What can you do?</h1>
+    <div className="nextSteps">
+      <h1>Have your rights been violated? What can you do?</h1>
       <h3>You Can:</h3>
 
       <ul>

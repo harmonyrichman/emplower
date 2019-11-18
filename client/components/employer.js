@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 const Employer = () => {
   return (
-    <div>
+    <div className="employer">
       <h1>After Your Interview, Has the Employer...</h1>
       <ol>
         <li>
