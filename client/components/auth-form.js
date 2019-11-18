@@ -9,35 +9,31 @@ import {auth, authLog} from '../store'
 const AuthForm = props => {
   const {name, displayName, handleSubmit, error} = props
   return (
-    <div>
+    <div className="auth">
       <form onSubmit={handleSubmit} name={name}>
         {displayName === 'Sign Up' ? (
           <div>
             <div>
-              <label htmlFor="firstName">
-                <small>First Name</small>
-              </label>
+              <label htmlFor="firstName">First Name</label>
+              <br />
               <input name="firstName" type="text" />
             </div>
 
             <div>
-              <label htmlFor="lastName">
-                <small>Last Name</small>
-              </label>
+              <label htmlFor="lastName">Last Name</label>
+              <br />
               <input name="lastName" type="text" />
             </div>
 
             <div>
-              <label htmlFor="email">
-                <small>Email</small>
-              </label>
+              <label htmlFor="email">Email</label>
+              <br />
               <input name="email" type="text" />
             </div>
 
             <div>
-              <label htmlFor="password">
-                <small>Password</small>
-              </label>
+              <label htmlFor="password">Password</label>
+              <br />
               <input name="password" type="password" />
             </div>
             <div>
@@ -48,16 +44,14 @@ const AuthForm = props => {
         ) : (
           <div>
             <div>
-              <label htmlFor="email">
-                <small>Email</small>
-              </label>
+              <label htmlFor="email">Email</label>
+              <br />
               <input name="email" type="text" />
             </div>
 
             <div>
-              <label htmlFor="password">
-                <small>Password</small>
-              </label>
+              <label htmlFor="password">Password</label>
+              <br />
               <input name="password" type="password" />
             </div>
             <div>

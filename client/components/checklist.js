@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {connect} from 'react-redux'
 // import Axios from 'axios';
 import {updatedUser} from '../store'
+import {Link} from 'react-router-dom'
 
 class Checklist extends Component {
   constructor(props) {
@@ -10,7 +11,6 @@ class Checklist extends Component {
     this.state = {
       company: '',
       position: '',
-      residency: '',
       jobDuties: '',
       related: '',
       timeElapsed: '',
@@ -37,7 +37,6 @@ class Checklist extends Component {
     this.setState({
       company: '',
       position: '',
-      residency: '',
       jobDuties: '',
       related: '',
       timeElapsed: '',
@@ -50,7 +49,7 @@ class Checklist extends Component {
 
   render() {
     return (
-      <div>
+      <div className="checklist">
         <h1>Create Your Letter</h1>
         <h3>
           Please fill out each piece that is relevant to you. Remember- this is
@@ -201,6 +200,13 @@ class Checklist extends Component {
 
           <div>
             <button type="submit">Are you done? Submit Now!</button>
+            <br />
+            <br />
+            <br />
+
+            <Link to="/letter">
+              <button type="submit">View Your Letter!</button>
+            </Link>
           </div>
         </form>
       </div>
