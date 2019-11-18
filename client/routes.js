@@ -12,8 +12,7 @@ import {
   Article23a,
   Employer,
   NextSteps,
-  Checklist,
-  Letter
+  Checklist
 } from './components'
 import {me} from './store'
 
@@ -46,7 +45,6 @@ class Routes extends Component {
             {/* Routes placed here are only available after logging in */}
             <Route path="/home" component={UserHome} />
             <Route path="/checklist" component={Checklist} />
-            <Route path="/letter" component={Letter} />
           </Switch>
         )}
         {/* Displays our Login component as a fallback */}

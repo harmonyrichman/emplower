@@ -64,9 +64,9 @@ form div {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 15px;
-  margin: auto;
+  margin: 5px;
 }
 
 .navbar .heading {
@@ -98,7 +98,7 @@ form div {
 }
 
 .homepage img {
-  width: 30%;
+  width: 38%;
   height: auto;
   margin: auto;
   display: flex;
