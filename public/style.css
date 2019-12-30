@@ -33,6 +33,13 @@ nav a {
   border: 2px solid#0F4D2E;
 }
 
+.auth button:hover {
+  -webkit-animation: swing 0.7s ease;
+  animation: swing 0.7s ease;
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
+}
+
 .auth input {
   height: 15px;
   width: 140px;
@@ -95,7 +102,23 @@ form div {
 .homepage h1 {
   display: flex;
   justify-content: center;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
 }
+/* .homepage bounce {
+  0% {
+    top: 0px;
+  },
+  50% {
+    top: 249px;
+    width: 130px;
+    height: 70px;
+  },
+  100% {
+    top: 0px;
+  }
+} */
 
 .homepage img {
   width: 38%;
@@ -115,6 +138,10 @@ form div {
   background-color: #e5dcf0;
 }
 
+#header {
+  background-color: coral;
+}
+
 .fairchance h1 {
   font-family: chalkduster;
   color: #173570;
@@ -122,6 +149,66 @@ form div {
 
 .fairchance h2 {
   color: #3e5a91;
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.fairchance .topic:hover {
+  -webkit-animation: swing 0.7s ease;
+  animation: swing 0.7s ease;
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
 }
 
 .fairchance h4 {
@@ -144,6 +231,13 @@ form div {
   height: 60px;
   cursor: pointer;
   border: 2px solid#6400C0;
+}
+
+.fairchance button:hover {
+  -webkit-animation: swing 0.7s ease;
+  animation: swing 0.7s ease;
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
 }
 /* FAIR CHANCE END */
 
@@ -182,6 +276,13 @@ form div {
   height: 60px; */
   cursor: pointer;
   border: 2px solid #4b0620;
+}
+
+.article23 button:hover {
+  -webkit-animation: swing 0.7s ease;
+  animation: swing 0.7s ease;
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
 }
 /* ARTICLE 23 END */
 
@@ -224,6 +325,13 @@ form div {
   cursor: pointer;
   border: 2px solid #373728;
 }
+
+.checklist button:hover {
+  -webkit-animation: swing 0.7s ease;
+  animation: swing 0.7s ease;
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
+}
 /* LETTER START */
 
 .letter {
@@ -245,6 +353,13 @@ form div {
   border-radius: 20%;
   cursor: pointer;
   border: 2px solid #0f4d2e;
+}
+
+.letter button:hover {
+  -webkit-animation: swing 0.7s ease;
+  animation: swing 0.7s ease;
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
 }
 
 /* LETTER END */
@@ -270,6 +385,13 @@ form div {
   border-radius: 20%;
   cursor: pointer;
   border: 2px solid #2a6793;
+}
+
+.employer button:hover {
+  -webkit-animation: swing 0.7s ease;
+  animation: swing 0.7s ease;
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
 }
 /* EMPLOYER END */
 

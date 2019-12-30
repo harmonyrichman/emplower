@@ -27,7 +27,8 @@ const updateUser = () => ({type: UPDATE_USER})
 export const updatedUser = user => async dispatch => {
   try {
     const {data} = await axios.put(`/api/users/checklist`, user)
-    dispatch(updateUser(data))
+    console.log('data,', data)
+    dispatch(updateUser(data[1]))
   } catch (error) {
     console.error('We cannot find your account because: ', error)
   }
@@ -108,7 +109,6 @@ export default function(state = defaultUser, action) {
     case REMOVE_USER:
       return defaultUser
     case UPDATE_USER:
-      console.log('REDUCER', action.user)
       return action.user
     default:
       return state
