@@ -338,10 +338,9 @@ form div {
 }
 
 .checklist button:hover {
-  -webkit-animation: swing 0.7s ease;
-  animation: swing 0.7s ease;
-  -webkit-animation-iteration-count: 5;
-  animation-iteration-count: 5;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 /* LETTER START */
 
