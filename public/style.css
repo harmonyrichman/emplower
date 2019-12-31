@@ -34,10 +34,9 @@ nav a {
 }
 
 .auth button:hover {
-  -webkit-animation: swing 0.7s ease;
-  animation: swing 0.7s ease;
-  -webkit-animation-iteration-count: 5;
-  animation-iteration-count: 5;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .auth input {
@@ -234,16 +233,15 @@ form div {
 }
 
 .fairchance button:hover {
-  -webkit-animation: swing 0.7s ease;
-  animation: swing 0.7s ease;
-  -webkit-animation-iteration-count: 5;
-  animation-iteration-count: 5;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 /* FAIR CHANCE END */
 
 /* ARTICLE 23A */
 .article23 {
-  margin: 2em;
+  margin: 1em;
   border: 1em double #752838;
   padding: 1em;
   background-color: #fde7f3;
@@ -266,6 +264,19 @@ form div {
   color: #4b0620;
 }
 
+.factors:hover {
+  -webkit-animation: swing 0.7s ease;
+  animation: swing 0.7s ease;
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
+}
+
+/* .article23 h4:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+} */
+
 .article23 button {
   color: #4b0620;
   background-color: #c39aaa;
@@ -279,11 +290,11 @@ form div {
 }
 
 .article23 button:hover {
-  -webkit-animation: swing 0.7s ease;
-  animation: swing 0.7s ease;
-  -webkit-animation-iteration-count: 5;
-  animation-iteration-count: 5;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
+
 /* ARTICLE 23 END */
 
 /* CHECKLIST START */
@@ -356,10 +367,9 @@ form div {
 }
 
 .letter button:hover {
-  -webkit-animation: swing 0.7s ease;
-  animation: swing 0.7s ease;
-  -webkit-animation-iteration-count: 5;
-  animation-iteration-count: 5;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 /* LETTER END */
@@ -388,10 +398,9 @@ form div {
 }
 
 .employer button:hover {
-  -webkit-animation: swing 0.7s ease;
-  animation: swing 0.7s ease;
-  -webkit-animation-iteration-count: 5;
-  animation-iteration-count: 5;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 /* EMPLOYER END */
 
@@ -424,8 +433,15 @@ form div {
   font-family: chalkduster;
 }
 
-#boxes {
+.boxes {
   /* display: flex; */
   justify-content: space-around;
   background-color: #d7ede1 !important;
+}
+
+.boxes:hover {
+  -webkit-animation: swing 0.7s ease;
+  animation: swing 0.7s ease;
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
 }

@@ -17,14 +17,17 @@ export const UserHome = props => {
       <br />
       <br />
 
-      <div id="boxes">
+      <div className="boxes">
         <Link to="/fairchanceact">
           <h3>Explore!</h3>
         </Link>
+      </div>
+      <div className="boxes">
         <Link to="/checklist">
           <h3>Create A New Letter</h3>
         </Link>
-
+      </div>
+      <div className="boxes">
         <Link to="/letter">
           <h3>View Your Letter</h3>
         </Link>
