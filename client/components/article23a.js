@@ -5,9 +5,11 @@ class Article23a extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      factors: false
+      factors: false,
+      whatIs: false
     }
     this.showFactors = this.showFactors.bind(this)
+    this.whatIs = this.whatIs.bind(this)
   }
 
   showFactors() {
@@ -20,19 +22,40 @@ class Article23a extends Component {
     )
   }
 
+  whatIs() {
+    console.log('clicked')
+    this.setState({
+      whatIs: !this.state.whatIs
+    })
+  }
+
   render() {
     return (
       <div className="article23">
         <h1>Article 23-A</h1>
-        <h2>What is it?</h2>
-        <h4>
-          Article 23-A is the piece of the Fair Chance Act that prohibits an
-          employer from unfairly discriminating against a person purely on the
-          basis of criminal conviction. This law has 8 specific factors that
-          employers must consider when evaluating a person with a prior
-          conviction. This allows for case-by-case consideration, and ensures
-          that no single factor should determine the entire hiring process.
-        </h4>
+        <h2
+          onClick={() => {
+            this.whatIs()
+          }}
+          className="whatIs"
+        >
+          What is it?
+        </h2>
+        {this.state.whatIs ? (
+          <p>
+            <h4>
+              Article 23-A is the piece of the Fair Chance Act that prohibits an
+              employer from unfairly discriminating against a person purely on
+              the basis of criminal conviction. This law has 8 specific factors
+              that employers must consider when evaluating a person with a prior
+              conviction. This allows for case-by-case consideration, and
+              ensures that no single factor should determine the entire hiring
+              process.
+            </h4>
+          </p>
+        ) : (
+          <div />
+        )}
 
         <h2
           onClick={() => {
@@ -147,9 +170,11 @@ class Article23a extends Component {
         ) : (
           <div />
         )}
-        <Link to="/checklist">
-          <button type="button">Ready to Create Your Own Letter?</button>
-        </Link>
+        <div className="articButton">
+          <Link to="/checklist">
+            <button type="button">Ready to Create Your Own Letter?</button>
+          </Link>
+        </div>
       </div>
     )
   }
