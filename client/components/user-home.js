@@ -18,19 +18,23 @@ export const UserHome = props => {
       <br />
 
       <div className="boxes">
-        <Link to="/fairchanceact">
-          <h3>Explore!</h3>
-        </Link>
-      </div>
-      <div className="boxes">
-        <Link to="/checklist">
-          <h3>Create A New Letter</h3>
-        </Link>
-      </div>
-      <div className="boxes">
-        <Link to="/letter">
-          <h3>View Your Letter</h3>
-        </Link>
+        <div>
+          <Link to="/fairchanceact">
+            <h3 className="box">Explore!</h3>
+          </Link>
+        </div>
+
+        <div>
+          <Link to="/checklist">
+            <h3 className="box">Create A New Letter</h3>
+          </Link>
+        </div>
+
+        <div>
+          <Link to="/letter">
+            <h3 className="box">View Your Letter</h3>
+          </Link>
+        </div>
       </div>
     </div>
   )

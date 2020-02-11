@@ -83,23 +83,26 @@ form div {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: -3vw;
+  margin: -1vw;
 
   /* justify-content: space-between; */
 }
 
 .navHead .heading {
   font-family: 'Playfair Display', serif;
-  font-size: 6vw;
+  font-size: 3.2vw;
   text-align: center;
+  padding: 1vw;
 }
 
 .subtext {
   font-family: Didot;
-  font-size: 23px;
+  font-size: 1.7vw;
   color: #eff7e9;
   display: flex;
   justify-content: center;
+  margin: -2vw;
+  padding: 1vw;
 }
 /* NAVBAR END */
 
@@ -174,10 +177,12 @@ form div {
 .fairchance h1 {
   font-family: 'Abril Fatface', cursive;
   color: #516489;
+  text-align: center;
 }
 
 .fairchance h2 {
   color: #516489;
+  padding-left: 2vw;
 }
 
 @-webkit-keyframes swing {
@@ -255,6 +260,7 @@ form div {
 .fairchance h4 {
   color: #31836e;
   font-size: 1.6vw;
+  padding-left: 3vw;
 }
 
 .fairchance li {
@@ -289,29 +295,34 @@ form div {
 /* ARTICLE 23A */
 .article23 {
   margin: auto;
-  margin-top: 2.3vw;
+  margin-top: 4vw;
   width: 80%;
   /* border: 1em double #304979; */
-  padding: 1em;
+  padding: 1vw;
   background-color: #e0eee7;
 }
 
 .article23 h1 {
   font-family: 'Abril Fatface', cursive;
   color: #516489;
+  text-align: center;
 }
 
 .article23 h4 {
   color: #31836e;
+  padding-left: 3vw;
+  font-size: 1.6vw;
 }
 
 .article23 h2 {
   color: #516489;
+  padding-left: 2vw;
 }
 
 .article23 li {
   color: #31836e;
   font-size: 1.6vw;
+  padding-left: 2vw;
 }
 
 .article23 h3 {
@@ -489,11 +500,12 @@ form div {
 /* NEXT STEPS END */
 
 .userHome {
-  margin: 2em;
-  border: 1em double #0e301e;
-  padding: 1em;
+  margin: auto;
+  margin-top: 2.5vw;
+  padding: 3vw;
+  width: 80%;
   color: #0e301e;
-  background-color: #d7ede1;
+  background-color: #e0eee7;
   /* display: flex */
 }
 .userHome h1 {
@@ -501,12 +513,13 @@ form div {
 }
 
 .boxes {
-  /* display: flex; */
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
   background-color: #d7ede1 !important;
 }
 
-.boxes:hover {
+.box:hover {
   -webkit-animation: swing 0.7s ease;
   animation: swing 0.7s ease;
   -webkit-animation-iteration-count: 5;
