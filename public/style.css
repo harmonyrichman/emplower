@@ -7,7 +7,7 @@ body {
 body a {
   font-family: Cambria, Cochin;
   background-color: #b9d7c8;
-  color: #0f4d2e !important;
+  color: #0f4d2e;
   cursor: pointer;
 }
 
@@ -481,25 +481,30 @@ form div {
 
 /* EMPLOYER START */
 .employer {
-  margin: 2em;
-  border: 1em double #2a6793;
-  padding: 1em;
-  background-color: #ddfdff;
-  color: #2a6793;
+  margin: auto;
+  margin-top: 2vw;
+  width: 85%;
+  padding: 1vw;
+  background-color: #e0eee7;
+  color: #516489;
 }
 
 .employer h1 {
-  font-family: chalkduster;
+  font-family: 'Abril Fatface', cursive;
+  color: #516489;
 }
 
 .employer button {
-  color: #2a6793;
-  background-color: #edf7fe;
-  font-size: 19px;
-  font-family: chalkduster;
-  border-radius: 20%;
-  cursor: pointer;
-  border: 2px solid #2a6793;
+  color: #173570;
+  background-color: #cfdcfc;
+  font-size: 1.2vw;
+  font-family: 'Abril Fatface', cursive;
+  border-radius: 8%;
+  width: 14vw;
+  height: 4vw;
+  text-align: center;
+
+  border: 2px dotted #173570;
 }
 
 .employer button:hover {
@@ -512,16 +517,17 @@ form div {
 /* NEXT STEPS START */
 
 .nextSteps {
-  margin: 2em;
-  border: 1em double #525a5e;
-  padding: 1em;
-  background-color: #edf3f0;
-  color: #31393d;
+  margin: auto;
+  margin-top: 4vw;
+  padding: 1vw;
+  background-color: #e0eee7;
+  color: #516489;
+  width: 80%;
 }
 
 .nextSteps h1 {
-  font-family: chalkduster;
-  color: #31393d;
+  font-family: 'Abril Fatface', cursive;
+  color: #516489;
 }
 
 /* NEXT STEPS END */
@@ -531,12 +537,13 @@ form div {
   margin-top: 2.5vw;
   padding: 3vw;
   width: 80%;
-  color: #0e301e;
+  color: #516489;
   background-color: #e0eee7;
   /* display: flex */
 }
 .userHome h1 {
-  font-family: chalkduster;
+  font-family: 'Abril Fatface', cursive;
+  color: #0f4d2e;
 }
 
 .boxes {
@@ -544,6 +551,7 @@ form div {
   flex-direction: row;
   justify-content: space-around;
   background-color: #e0eee7;
+  color: #516489 !important;
 }
 
 .box:hover {
@@ -551,4 +559,5 @@ form div {
   animation: swing 0.7s ease;
   -webkit-animation-iteration-count: 5;
   animation-iteration-count: 5;
+  color: #516489;
 }

@@ -41,11 +41,13 @@ const Employer = () => {
         </li>
       </ol>
       <div>
-        <Link to="/nextsteps">
-          <button type="button">
-            If you think your rights have been violated
-          </button>
-        </Link>
+        <div className="fairButton">
+          <Link to="/nextsteps">
+            <button type="button">
+              If you think your rights have been violated
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   )
