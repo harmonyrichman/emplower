@@ -134,7 +134,7 @@ class FairChance extends Component {
           <div className="fairButton">
             <Link to="/article23a">
               <button type="button">
-                <strong>Know Your Rights!</strong>
+                <strong>Learn More!</strong>
               </button>
             </Link>
           </div>

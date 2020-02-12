@@ -276,11 +276,11 @@ form div {
 .fairchance button {
   color: #173570;
   background-color: #cfdcfc;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   font-family: 'Abril Fatface', cursive;
   border-radius: 8%;
-  width: 16vw;
-  height: 7vw;
+  width: 10vw;
+  height: 4vw;
 
   border: 2px dotted #173570;
 }
@@ -359,12 +359,11 @@ form div {
 .article23 button {
   color: #173570;
   background-color: #cfdcfc;
-  font-size: 1.4vw;
+  font-size: 1vw;
   font-family: 'Abril Fatface', cursive;
   border-radius: 8%;
-  width: 16vw;
-  height: 7vw;
-
+  width: 10vw;
+  height: 4vw;
   border: 2px dotted #173570;
 }
 
@@ -378,24 +377,25 @@ form div {
 
 /* CHECKLIST START */
 .checklist {
-  margin: 2em;
-  border: 1em double #373728;
-  padding: 1em;
-  background-color: #f8f9b0;
+  margin: auto;
+  margin-top: 2vw;
+  padding: 2vw;
+  background-color: #e0eee7;
+  width: 85%;
 }
 
 .checklist h1 {
-  color: #373728;
+  color: #516489;
   font-family: chalkduster;
 }
 
 .checklist h3 {
-  color: #51513a;
+  color: #516489;
 }
 
 .checklist input {
   width: 100%;
-  height: 30px;
+  height: 2.4vw;
 }
 
 .checklist input:focus {
@@ -403,17 +403,25 @@ form div {
 }
 
 .checklist h4 {
-  color: #51513a;
+  color: #516489;
+}
+
+.formSubmit {
+  display: flex;
+  justify-content: column;
+  /* flex-direction: row; */
+  justify-content: center;
 }
 
 .checklist button {
-  color: #373728;
-  background-color: #c8b3ac;
-  font-size: 19px;
-  font-family: chalkduster;
-  border-radius: 20%;
-  cursor: pointer;
-  border: 2px solid #373728;
+  color: #173570;
+  background-color: #cfdcfc;
+  font-size: 1vw;
+  font-family: 'Abril Fatface', cursive;
+  border-radius: 8%;
+  width: 10vw;
+  height: 4vw;
+  border: 2px dotted #173570;
 }
 
 .checklist button:hover {
@@ -516,7 +524,7 @@ form div {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #d7ede1 !important;
+  background-color: #e0eee7;
 }
 
 .box:hover {
