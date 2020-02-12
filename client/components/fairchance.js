@@ -131,10 +131,13 @@ class FairChance extends Component {
           ) : (
             <div />
           )}
-
-          <Link to="/article23a">
-            <button type="button">Know Your Rights!</button>
-          </Link>
+          <div className="fairButton">
+            <Link to="/article23a">
+              <button type="button">
+                <strong>Learn More!</strong>
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     )

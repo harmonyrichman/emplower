@@ -2,15 +2,18 @@ body {
   font-family: Cambria, Cochin;
   background-color: #b9d7c8;
   color: #0f4d2e !important;
+  cursor: pointer;
 }
 body a {
   font-family: Cambria, Cochin;
   background-color: #b9d7c8;
-  color: #0f4d2e !important;
+  color: #0f4d2e;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
+  background-color: #b9d7c8;
 }
 
 /* label {
@@ -70,20 +73,36 @@ form div {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  font-size: 15px;
-  margin: 5px;
+  justify-content: flex-end;
+  /* justify-content: space-between; */
+  font-size: 1vw;
+  /* margin: 5px; */
 }
 
-.navbar .heading {
-  font-family: chalkduster;
-  font-size: 50px;
+.navHead {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: -1vw;
+
+  /* justify-content: space-between; */
+}
+
+.navHead .heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2vw;
+  text-align: center;
+  padding: 1vw;
 }
 
 .subtext {
   font-family: Didot;
-  font-size: 23px;
+  font-size: 1.7vw;
   color: #eff7e9;
+  display: flex;
+  justify-content: center;
+  margin: -2vw;
+  padding: 1vw;
 }
 /* NAVBAR END */
 
@@ -92,11 +111,14 @@ form div {
 .homepage {
   border: 3px ridge #0f4d2e;
   background-color: #d3fae2;
-  width: 400px;
-  height: 280px;
-  margin: 50px;
-  /* display: flex;
-  justify-content: center; */
+  width: 26vw;
+  height: 24vw;
+  object-fit: contain;
+  /* margin: 50px; */
+
+  margin: auto;
+  /* display: float; */
+  /* justify-content: center; */
 }
 .homepage h1 {
   display: flex;
@@ -119,11 +141,20 @@ form div {
   }
 } */
 
-.homepage img {
-  width: 38%;
+.homepage {
   height: auto;
+  max-width: 20vw;
   margin: auto;
   display: flex;
+  flex-direction: column;
+}
+
+.homepage img {
+  /* height: 9vw; */
+  width: auto;
+  /* width: 8vw; */
+  /* display: flex;
+  justify-items: center; */
 }
 
 /* HOMEPAGE END */
@@ -131,10 +162,12 @@ form div {
 /* FAIR CHANCE START */
 
 .fairchance {
-  margin: 2em;
-  border: 1em double #304979;
+  margin: auto;
+  margin-top: 2.3vw;
+  width: 80%;
+  /* border: 1em double #304979; */
   padding: 1em;
-  background-color: #e5dcf0;
+  background-color: #e0eee7;
 }
 
 #header {
@@ -142,12 +175,14 @@ form div {
 }
 
 .fairchance h1 {
-  font-family: chalkduster;
-  color: #173570;
+  font-family: 'Abril Fatface', cursive;
+  color: #516489;
+  text-align: center;
 }
 
 .fairchance h2 {
-  color: #3e5a91;
+  color: #516489;
+  padding-left: 2vw;
 }
 
 @-webkit-keyframes swing {
@@ -203,6 +238,18 @@ form div {
   }
 }
 
+.homepage .starting {
+  text-align: center;
+  padding: 1vw;
+}
+
+.homepage .starting:hover {
+  -webkit-animation: swing 0.7s ease;
+  animation: swing 0.7s ease;
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
+}
+
 .fairchance .topic:hover {
   -webkit-animation: swing 0.7s ease;
   animation: swing 0.7s ease;
@@ -211,25 +258,31 @@ form div {
 }
 
 .fairchance h4 {
-  color: #1b1c6f;
+  color: #31836e;
+  font-size: 1.6vw;
+  padding-left: 3vw;
 }
 
 .fairchance li {
-  color: #6400c0;
+  color: #31836e;
+}
+
+.fairButton {
+  display: flex;
+  justify-content: center;
+  background-color: #e0eee7 !important;
 }
 
 .fairchance button {
-  display: flex;
-  justify-content: center;
-  color: #6400c0;
-  background-color: #f6f3f9;
-  font-size: 19px;
-  font-family: chalkduster;
-  border-radius: 20%;
-  width: 180px;
-  height: 60px;
-  cursor: pointer;
-  border: 2px solid#6400C0;
+  color: #173570;
+  background-color: #cfdcfc;
+  font-size: 1.2vw;
+  font-family: 'Abril Fatface', cursive;
+  border-radius: 8%;
+  width: 10vw;
+  height: 4vw;
+
+  border: 2px dotted #173570;
 }
 
 .fairchance button:hover {
@@ -241,30 +294,50 @@ form div {
 
 /* ARTICLE 23A */
 .article23 {
-  margin: 1em;
-  border: 1em double #752838;
-  padding: 1em;
-  background-color: #fde7f3;
+  margin: auto;
+  margin-top: 4vw;
+  width: 80%;
+  /* border: 1em double #304979; */
+  padding: 1vw;
+  background-color: #e0eee7;
 }
 
 .article23 h1 {
-  font-family: chalkduster;
-  color: #752838;
-}
-
-.article23 h2 {
-  color: #9c3f62;
-}
-
-.article23 li {
-  color: #4b0620;
+  font-family: 'Abril Fatface', cursive;
+  color: #516489;
+  text-align: center;
 }
 
 .article23 h4 {
-  color: #4b0620;
+  color: #31836e;
+  padding-left: 3vw;
+  font-size: 1.6vw;
+}
+
+.article23 h2 {
+  color: #516489;
+  padding-left: 2vw;
+}
+
+.article23 li {
+  color: #31836e;
+  font-size: 1.6vw;
+  padding-left: 2vw;
+}
+
+.article23 h3 {
+  color: #31836e;
+  font-size: 1.6vw;
 }
 
 .factors:hover {
+  -webkit-animation: swing 0.7s ease;
+  animation: swing 0.7s ease;
+  -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5;
+}
+
+.whatIs:hover {
   -webkit-animation: swing 0.7s ease;
   animation: swing 0.7s ease;
   -webkit-animation-iteration-count: 5;
@@ -277,16 +350,21 @@ form div {
   transform: scale(1.15);
 } */
 
+.articButton {
+  display: flex;
+  justify-content: center;
+  background-color: #e0eee7 !important;
+}
+
 .article23 button {
-  color: #4b0620;
-  background-color: #c39aaa;
-  font-size: 19px;
-  font-family: chalkduster;
-  border-radius: 20%;
-  /* width: 180px;
-  height: 60px; */
-  cursor: pointer;
-  border: 2px solid #4b0620;
+  color: #173570;
+  background-color: #cfdcfc;
+  font-size: 1vw;
+  font-family: 'Abril Fatface', cursive;
+  border-radius: 8%;
+  width: 10vw;
+  height: 4vw;
+  border: 2px dotted #173570;
 }
 
 .article23 button:hover {
@@ -299,71 +377,98 @@ form div {
 
 /* CHECKLIST START */
 .checklist {
-  margin: 2em;
-  border: 1em double #373728;
-  padding: 1em;
-  background-color: #f8f9b0;
+  margin: auto;
+  margin-top: 2vw;
+  padding: 2vw;
+  background-color: #e0eee7;
+  width: 85%;
 }
 
 .checklist h1 {
-  color: #373728;
+  color: #516489;
   font-family: chalkduster;
 }
 
 .checklist h3 {
-  color: #51513a;
+  color: #516489;
 }
 
 .checklist input {
   width: 100%;
-  height: 30px;
+  height: 2.4vw;
 }
 
 .checklist input:focus {
-  background-color: #b9d7c8;
+  background-color: #f8f4dd;
 }
 
 .checklist h4 {
-  color: #51513a;
+  color: #516489;
+}
+
+.formSubmit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto;
+  /* display: flex; */
+  /* justify-content: column; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
+}
+
+.formSubmit button {
+  object-fit: contain;
+  /* margin: 2vw; */
+  background-color: #e0eee7;
 }
 
 .checklist button {
-  color: #373728;
-  background-color: #c8b3ac;
-  font-size: 19px;
-  font-family: chalkduster;
-  border-radius: 20%;
-  cursor: pointer;
-  border: 2px solid #373728;
+  color: #173570;
+  background-color: #cfdcfc;
+  font-size: 1vw;
+  font-family: 'Abril Fatface', cursive;
+  border-radius: 8%;
+  width: 10vw;
+  height: 4vw;
+  border: 2px dotted #173570;
+}
+
+.letterButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
 }
 
 .checklist button:hover {
-  -webkit-animation: swing 0.7s ease;
-  animation: swing 0.7s ease;
-  -webkit-animation-iteration-count: 5;
-  animation-iteration-count: 5;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 /* LETTER START */
 
 .letter {
-  margin: 2em;
-  border: 1em double #0f4d2e;
-  padding: 1em;
-  background-color: #e2ece1;
-}
-
-.letter h1 {
-  font-family: chalkduster;
+  margin: auto;
+  margin-top: 2.3vw;
+  color: #516489;
+  padding: 1vw;
+  width: 80%;
+  background-color: #e0eee7;
 }
 
 .letter button {
-  color: #0f4d2e;
-  background-color: #fafdfb;
-  font-size: 19px;
-  font-family: chalkduster;
-  border-radius: 20%;
-  cursor: pointer;
-  border: 2px solid #0f4d2e;
+  color: #173570;
+  background-color: #cfdcfc;
+
+  font-size: 1vw;
+  font-family: 'Abril Fatface', cursive;
+  border-radius: 8%;
+  width: 10vw;
+  height: 4vw;
+  border: 2px dotted #173570;
 }
 
 .letter button:hover {
@@ -376,25 +481,30 @@ form div {
 
 /* EMPLOYER START */
 .employer {
-  margin: 2em;
-  border: 1em double #2a6793;
-  padding: 1em;
-  background-color: #ddfdff;
-  color: #2a6793;
+  margin: auto;
+  margin-top: 2vw;
+  width: 85%;
+  padding: 1vw;
+  background-color: #e0eee7;
+  color: #516489;
 }
 
 .employer h1 {
-  font-family: chalkduster;
+  font-family: 'Abril Fatface', cursive;
+  color: #516489;
 }
 
 .employer button {
-  color: #2a6793;
-  background-color: #edf7fe;
-  font-size: 19px;
-  font-family: chalkduster;
-  border-radius: 20%;
-  cursor: pointer;
-  border: 2px solid #2a6793;
+  color: #173570;
+  background-color: #cfdcfc;
+  font-size: 1.2vw;
+  font-family: 'Abril Fatface', cursive;
+  border-radius: 8%;
+  width: 14vw;
+  height: 4vw;
+  text-align: center;
+
+  border: 2px dotted #173570;
 }
 
 .employer button:hover {
@@ -407,41 +517,47 @@ form div {
 /* NEXT STEPS START */
 
 .nextSteps {
-  margin: 2em;
-  border: 1em double #525a5e;
-  padding: 1em;
-  background-color: #edf3f0;
-  color: #31393d;
+  margin: auto;
+  margin-top: 4vw;
+  padding: 1vw;
+  background-color: #e0eee7;
+  color: #516489;
+  width: 80%;
 }
 
 .nextSteps h1 {
-  font-family: chalkduster;
-  color: #31393d;
+  font-family: 'Abril Fatface', cursive;
+  color: #516489;
 }
 
 /* NEXT STEPS END */
 
 .userHome {
-  margin: 2em;
-  border: 1em double #0e301e;
-  padding: 1em;
-  color: #0e301e;
-  background-color: #d7ede1;
+  margin: auto;
+  margin-top: 2.5vw;
+  padding: 3vw;
+  width: 80%;
+  color: #516489;
+  background-color: #e0eee7;
   /* display: flex */
 }
 .userHome h1 {
-  font-family: chalkduster;
+  font-family: 'Abril Fatface', cursive;
+  color: #0f4d2e;
 }
 
 .boxes {
-  /* display: flex; */
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  background-color: #d7ede1 !important;
+  background-color: #e0eee7;
+  color: #516489 !important;
 }
 
-.boxes:hover {
+.box:hover {
   -webkit-animation: swing 0.7s ease;
   animation: swing 0.7s ease;
   -webkit-animation-iteration-count: 5;
   animation-iteration-count: 5;
+  color: #516489;
 }

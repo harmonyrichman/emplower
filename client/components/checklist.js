@@ -18,16 +18,24 @@ class Checklist extends Component {
       ageAtCommit: '',
       serious: '',
       rehab: '',
-      safetyIssue: ''
+      safetyIssue: '',
+      isClicked: false
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.isClicked = this.isClicked.bind(this)
   }
 
   handleChange(event) {
     console.log(event.target.value)
     this.setState({
       [event.target.name]: event.target.value
+    })
+  }
+
+  isClicked() {
+    this.setState({
+      isClicked: !this.state.isClicked
     })
   }
 
@@ -210,16 +218,28 @@ class Checklist extends Component {
             <br />
           </div>
 
-          <div>
-            <button type="submit">Are you done? Submit Now!</button>
-            <br />
-            <br />
-            <br />
+          <div className="formSubmit">
+            <button
+              type="submit"
+              onClick={() => {
+                this.isClicked()
+              }}
+            >
+              Are you done? Submit Now!
+            </button>
 
-            <Link to="/letter">
-              <button type="submit">View Your Letter!</button>
-            </Link>
+            {this.state.isClicked ? (
+              <Link to="/letter">
+                <button type="submit">View your letter!</button>
+              </Link>
+            ) : (
+              <div />
+            )}
           </div>
+
+          {/* <Link to="/letter">
+              <button type="submit">View Your Letter!</button>
+            </Link> */}
         </form>
       </div>
     )

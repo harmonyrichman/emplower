@@ -18,10 +18,9 @@ const Letter = props => {
     safetyIssue,
     email
   } = props
+
   return (
     <div className="letter">
-      <h1>Your Freshly Generated Letter:</h1>
-      <hr />
       <div align="right">
         <h5>{date}</h5>
       </div>
@@ -132,16 +131,18 @@ const Letter = props => {
       <br />
       <br />
       <br />
-      <Link to="/checklist">
-        <button type="button">Create a New Letter</button>
-      </Link>
-      <br />
-      <br />
-      <br />
-      <br />
-      <Link to="/employerchecklist">
-        <button type="button">I have my letter. What's next?</button>
-      </Link>
+      <div className="letterButton">
+        <Link to="/checklist">
+          <button type="button">Create a New Letter</button>
+        </Link>
+        <br />
+        <br />
+        <br />
+        <br />
+        <Link to="/employerchecklist">
+          <button type="button">I have my letter. What's next?</button>
+        </Link>
+      </div>
     </div>
   )
 }

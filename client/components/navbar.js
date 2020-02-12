@@ -5,15 +5,8 @@ import {Link} from 'react-router-dom'
 import {logout} from '../store'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
-  <div className="navbar">
-    <Link to="/homepage">
-      {/* {' '} */}
-      <h1 className="heading">EMPLOWER</h1>
-
-      <h3 className="subtext">Empowered & Employed</h3>
-    </Link>
-
-    <nav>
+  <div>
+    <nav className="navbar">
       {isLoggedIn ? (
         <div>
           {/* The navbar will show these links after you log in */}
@@ -41,7 +34,16 @@ const Navbar = ({handleClick, isLoggedIn}) => (
         </div>
       )}
     </nav>
-    {/* <hr /> */}
+
+    <div className="navHead">
+      <Link to="/homepage">
+        <h1 className="heading">EMPLOWER</h1>
+
+        <h3 className="subtext">Empowered & Employed</h3>
+      </Link>
+    </div>
+
+    <hr />
   </div>
 )
 

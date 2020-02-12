@@ -4,13 +4,15 @@ import {Link} from 'react-router-dom'
 const HomePage = () => {
   return (
     <div>
-      <hr />
-      <div className="homepage">
-        <Link to="/fairchanceact">
-          <h1>Let's Get Started!</h1>
-        </Link>
-        <img src="https://static.thenounproject.com/png/57060-200.png" />
-      </div>
+      <br />
+      <br />
+
+      <Link to="/fairchanceact">
+        <div className="homepage">
+          <h1 className="starting">Let's Get Started!</h1>
+          <img src="https://static.thenounproject.com/png/57060-200.png" />
+        </div>
+      </Link>
     </div>
   )
 }
