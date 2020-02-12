@@ -229,14 +229,9 @@ class Checklist extends Component {
             </button>
 
             {this.state.isClicked ? (
-              // <div>
-              // <br/>
-              <div>
-                <br />
-                <Link to="/letter">
-                  <button type="submit">View your letter!</button>
-                </Link>
-              </div>
+              <Link to="/letter">
+                <button type="submit">View your letter!</button>
+              </Link>
             ) : (
               <div />
             )}

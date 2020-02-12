@@ -13,7 +13,7 @@ body a {
 
 a {
   text-decoration: none;
-  background-color: #e0eee7;
+  background-color: #b9d7c8;
 }
 
 /* label {
@@ -399,7 +399,7 @@ form div {
 }
 
 .checklist input:focus {
-  background-color: #b9d7c8;
+  background-color: #f8f4dd;
 }
 
 .checklist h4 {
@@ -408,9 +408,20 @@ form div {
 
 .formSubmit {
   display: flex;
-  justify-content: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto;
+  /* display: flex; */
+  /* justify-content: column; */
   /* flex-direction: row; */
-  justify-content: center;
+  /* justify-content: center; */
+}
+
+.formSubmit button {
+  object-fit: contain;
+  /* margin: 2vw; */
+  background-color: #e0eee7;
 }
 
 .checklist button {
