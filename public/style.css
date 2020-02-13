@@ -99,6 +99,10 @@ form div {
   justify-content: center;
 }
 
+.testBranch {
+  color: blue;
+}
+
 .moreinfo img {
   width: 2em;
   height: 3em;
