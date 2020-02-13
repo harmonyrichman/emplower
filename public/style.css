@@ -42,7 +42,21 @@ nav a {
   justify-content: center;
 } */
 
-.google {
+#google a {
+  color: #0f4d2e;
+  background-color: #e2ece1;
+  font-family: Cambria, Cochin;
+  font-size: 1.2vw;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 0.2vw solid#0F4D2E;
+}
+#google a:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  color: white;
+  background-color: #0f4d2e;
 }
 
 .auth button {

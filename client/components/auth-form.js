@@ -63,7 +63,7 @@ const AuthForm = props => {
       </form>
       <hr />
       {/* <div className="google"> */}
-      <div className="google">
+      <div id="google">
         <a href="/auth/google">{displayName} with Google</a>
       </div>
       {/* </div> */}
