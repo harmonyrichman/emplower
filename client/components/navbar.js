@@ -14,8 +14,8 @@ const Navbar = ({handleClick, isLoggedIn}) => (
           {/* <Link to="/homepage">Home Page</Link> */}
           <Link to="/fairchanceact">The Fair Chance Act</Link>
           <Link to="/article23a">Article 23-A</Link>
-          <Link to="/employerchecklist">Employer Checklist</Link>
-          <Link to="/nextsteps">What You Can Do</Link>
+          <Link to="/employerchecklist">Post-Interview</Link>
+          <Link to="/nextsteps">Legal Resources</Link>
           <Link to="/home">Home</Link>
           <a href="#" onClick={handleClick}>
             Logout

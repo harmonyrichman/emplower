@@ -13,7 +13,7 @@ body a {
 
 a {
   text-decoration: none;
-  background-color: #b9d7c8;
+  /* background-color: #b9d7c8; */
 }
 
 /* label {
@@ -26,20 +26,41 @@ nav a {
   color: #0f4d2e;
 }
 
+.auth {
+  background-color: #e0eee7;
+  margin: auto;
+  margin-top: 2vw;
+  width: 70%;
+  padding: 3vw;
+  /*
+  display: flex;
+  justify-content: space-between */
+}
+
+/* .google {
+  display: flex;
+  justify-content: center;
+} */
+
+.google {
+}
+
 .auth button {
   color: #0f4d2e;
   background-color: #e2ece1;
   font-family: Cambria, Cochin;
-  font-size: 15px;
+  font-size: 1.2vw;
   border-radius: 20%;
   cursor: pointer;
-  border: 2px solid#0F4D2E;
+  border: 0.2vw solid#0F4D2E;
 }
 
 .auth button:hover {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
   transform: scale(1.3);
+  color: white;
+  background-color: #0f4d2e;
 }
 
 .auth input {
@@ -392,7 +413,7 @@ form div {
 
 .checklist h1 {
   color: #516489;
-  font-family: chalkduster;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .checklist h3 {
