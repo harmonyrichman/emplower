@@ -18,7 +18,4 @@ This tech stack used Node, Express, React, Redux, and PostgreSQL. I used Postgre
 
 Since this is an educational application, I will add more UI to break down the text heavy pages and make it a more interactive learning experience. I want this to be utilized by returning citizens and added into curriculums at re-entry programs to help users practice their computer fluency and take control of their narratives as they move into the job search.
 
-> > > > > > > ca59774c2e1abca6da2c5570f2740a24f1abd4ea
-> > > > > > > 49ead5984cd2cfced255b5b44cd62f65cf1ed641
 
-TESTING TESTING TESTING
