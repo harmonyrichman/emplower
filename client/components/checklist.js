@@ -217,26 +217,14 @@ class Checklist extends Component {
             <br />
             <br />
           </div>
-
-          <div className="formSubmit">
-            <button
-              type="submit"
-              onClick={() => {
-                this.isClicked()
-              }}
-            >
-              Are you done? Submit Now!
-            </button>
-
-            {this.state.isClicked ? (
-              <Link to="/letter">
-                <button type="submit">View your letter!</button>
-              </Link>
-            ) : (
-              <div />
-            )}
-          </div>
-
+          Are you done? Submit Now!
+          {this.state.isClicked ? (
+            <Link to="/letter">
+              <button type="submit">View your letter!</button>
+            </Link>
+          ) : (
+            <div />
+          )}
           {/* <Link to="/letter">
               <button type="submit">View Your Letter!</button>
             </Link> */}
