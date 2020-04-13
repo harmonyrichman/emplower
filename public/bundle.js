@@ -461,6 +461,8 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "checklist"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Create Your Letter"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Please fill out each piece that is relevant to you. Remember- this is your chance to take ownership of your story. What will help your potential future employer understand why you are the best candidate for the position?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
@@ -525,11 +527,18 @@ function (_Component) {
         placeholder: "Will hiring you pose a danger to customers or other employees?",
         value: this.state.safetyIssue,
         onChange: this.handleChange
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)), "Are you done? Submit Now!", this.state.isClicked ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "formSubmit"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        type: "submit",
+        onClick: function onClick() {
+          _this2.isClicked();
+        }
+      }, "Are you done? Submit Now!"), this.state.isClicked ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
         to: "/letter"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         type: "submit"
-      }, "View your letter!")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null)));
+      }, "View your letter!")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null))));
     }
   }]);
 
