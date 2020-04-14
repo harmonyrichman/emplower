@@ -2,9 +2,9 @@ import React from 'react'
 
 const NextSteps = () => {
   return (
-    <div className="nextSteps">
+    <div className="page-container">
       <h1>Have your rights been violated? What can you do?</h1>
-      <h3>You Can:</h3>
+      <h4>You Can:</h4>
 
       <ul>
         <li>

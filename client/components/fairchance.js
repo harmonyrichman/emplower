@@ -40,7 +40,7 @@ class FairChance extends Component {
 
   render() {
     return (
-      <div className="fairchance">
+      <div className="page-container">
         <h1>The Fair Chance Act</h1>
         <h2
           className="topic"
@@ -131,7 +131,7 @@ class FairChance extends Component {
           ) : (
             <div />
           )}
-          <div className="fairButton">
+          <div className="page-button">
             <Link to="/article23a">
               <button type="button">
                 <strong>Learn More!</strong>
