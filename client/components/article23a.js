@@ -31,13 +31,13 @@ class Article23a extends Component {
 
   render() {
     return (
-      <div className="article23">
+      <div className="page-container">
         <h1>Article 23-A</h1>
         <h2
           onClick={() => {
             this.whatIs()
           }}
-          className="whatIs"
+          className="topic"
         >
           What is it?
         </h2>
@@ -61,7 +61,7 @@ class Article23a extends Component {
           onClick={() => {
             this.showFactors()
           }}
-          className="factors"
+          className="topic"
         >
           The 8 Factors Are:
         </h2>
@@ -170,9 +170,9 @@ class Article23a extends Component {
         ) : (
           <div />
         )}
-        <div className="articButton">
+        <div className="page-button">
           <Link to="/checklist">
-            <button type="button">Ready to Create Your Own Letter?</button>
+            <button type="button">Create Your Own Letter</button>
           </Link>
         </div>
       </div>

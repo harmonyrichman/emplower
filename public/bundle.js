@@ -186,24 +186,24 @@ function (_Component) {
       var _this2 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "article23"
+        className: "page-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Article 23-A"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         onClick: function onClick() {
           _this2.whatIs();
         },
-        className: "whatIs"
+        className: "topic"
       }, "What is it?"), this.state.whatIs ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Article 23-A is the piece of the Fair Chance Act that prohibits an employer from unfairly discriminating against a person purely on the basis of criminal conviction. This law has 8 specific factors that employers must consider when evaluating a person with a prior conviction. This allows for case-by-case consideration, and ensures that no single factor should determine the entire hiring process.")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         onClick: function onClick() {
           _this2.showFactors();
         },
-        className: "factors"
+        className: "topic"
       }, "The 8 Factors Are:"), this.state.factors ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "New York State encourages the employment of persons with prior convictions.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Do you live in New York? Your state wants employers to provide opportunities to residents who have criminal convictions")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "The specific duties and responsibilities necessarily related to the license or employment sought.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "What does the job actually entail? What are the day to day responsibilities of the job? Does it require any special skills?")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "The bearing, if any, the criminal offense(s) for which the person was convicted will have on their ability to perform the job duties.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Does the job relate to the charge? Could the conviction make you less suitable for that particlar job? For example, someone with a gun charge would not be eligible for a security position (without a Certificate of Relief). Or, someone convicted of a burglary might not be suitable for a job as a bank teller. Don't worry though- there are other jobs that will be a good fit for you!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "The time that has elapsed since the occurance of the criminal offense(s).", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "How long has it been since the crime was committed? Remember- this is different from when you might have received a conviction. Showing that time has passed since the committed crime creates space between the decision you made then and the person you are now.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "The age of the person at the time of the occurance of the criminal offense(s).", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "How old were you when the crime was committed? It is scientific fact that our brains are not fully developed as adolescents, so being able to address how your decision making skills and mentality has developed and matured since then is key.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "The seriousness of the offense(s).", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "It is important that different charges are examined differently. If you have a nonviolent conviction, or if there is context to the charge that you think is appropriate for a hiring mangager to know, then let them know. The criminalization of poverty is very real- and the responsibility of that is on the structure of our society.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Any information produced by the person, or produced on behalf of the person, in regard to their rehabilitation and good conduct.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "What have you done since then? This is an opportunity for you to take control of your own story. What did you learn through your experience? Did you go back to school or start/finish a GED program? Did you receive any certifications (Food Handlers License, OSHA tranings, apprenticeships) since the time of the offense? This is your opportunity to show the upward direction you are striving for, and that you are not interested in making decisions that will push you backwards.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "The legitimate interest of the public agency or private employer in protecting property, and the safety and welfare of the general public.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Will hiring you put anyone at risk? This includes other employees and customers. This is a big one! You want to demonstrate that you will be a benefit to the company, and not a risk.")))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "articButton"
+        className: "page-button"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/checklist"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         type: "button"
-      }, "Ready to Create Your Own Letter?"))));
+      }, "Create Your Own Letter"))));
     }
   }]);
 
@@ -465,33 +465,35 @@ function (_Component) {
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "checklist"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Create Your Letter"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Please fill out each piece that is relevant to you. Remember- this is your chance to take ownership of your story. What will help your potential future employer understand why you are the best candidate for the position?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Create Your Letter"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Please fill out each piece that is relevant to you. Remember- this is your chance to take ownership of your story. What will help your potential future employer understand why you are the best candidate for the position?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+        align: "center"
+      }, "* * *Make sure these fields are filled out"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         onSubmit: this.handleSubmit
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Today's Date"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "***Today's Date: "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         name: "date",
         placeholder: "MONTH DAY, YEAR",
         value: this.state.date,
         onChange: this.handleChange
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "The company you are applying to:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "***The company you are applying to: "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         name: "company",
         placeholder: "Company",
         value: this.state.company,
         onChange: this.handleChange
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "The position you are applying for:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "***The position you are applying for: "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         name: "position",
         placeholder: "Position",
         value: this.state.position,
         onChange: this.handleChange
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Why are you qualified for the specific responsibilities of this position?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "***Why are you qualified for the specific responsibilities of this position?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         name: "related",
         placeholder: "Why are you qualified for the specific responsibilities of this position?",
         value: this.state.related,
         onChange: this.handleChange
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "How does your charge NOT affect your ability to be successful in this position?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "***How does your charge NOT affect your ability to be successful in this position?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         name: "jobDuties",
         placeholder: "Does your conviction relate to the job you are applying for?",
@@ -580,14 +582,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var Employer = function Employer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "employer"
+    className: "page-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "After Your Interview, Has the Employer..."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ol", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Given you a copy of any background checks it did on you?", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Remember- make sure you read the background checks; they can be faulty! Make sure the conviction(s) and information around the conviction(s) is correct. Youthful Offender (YO) charges should not show up!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Share a written evaulation with you that addresses specific factors from Article 23-A?", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Employers need to send you a letter that addresses each factor from Article 23-A that they believe is a cause for concern if they were to hire you. When you send back your response letter, make sure you've addressed every point they've brought up! It's important to have a counterargument that shows why their concern shouldn't be a concern.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Given you at least 3 business days to let you respond?", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Some employers may give you a full week, but legally speaking they are only obligated to give you three business days. If you know you have a conviction that will appear on a background check, get started with this process early! Use the Emplower letter generator to have your response ready to send out."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "fairButton"
+    className: "letterButton"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/nextsteps"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "button"
-  }, "If you think your rights have been violated")))));
+  }, "They Have Not")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Employer);
@@ -761,7 +763,9 @@ __webpack_require__.r(__webpack_exports__);
 var HomePage = function HomePage() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/fairchanceact"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "subtexter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "Fair and Equitable Hiring Practices for Justice Involved Communities", ' ')), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "homepage"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "starting"
@@ -870,7 +874,7 @@ var Letter = function Letter(props) {
       safetyIssue = props.safetyIssue,
       email = props.email;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "letter"
+    className: "page-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     align: "right"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, date)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "To Whom it May Concern:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "My name is ", firstName, " ", lastName, " and I am writing this letter in regards to my candidacy for the ", position, " position at ", company, ". I am grateful for the opportunity to be considered for this role as I believe I can be a great asset to ", company, ". I understand that there may be some concerns from the results of my background check and I\u2019d like to address each of them to show why I am still fit and very capable of handling the responsibilities of the position."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, jobDuties ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "I believe I am a great fit for the ", position, " position. ", jobDuties) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, related ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "I understand that there might be concerns about my fitness in this position given my history. However, the ", position, " position and its responsibilities do not intersect with the charge and will have no bearing on my ability to operate successfully. ", related) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, timeElapsed && ageAtCommit ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Furthermore, I was in a very different state when the offense occured. ", timeElapsed, " ", ageAtCommit) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, serious ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "I know that a big objective of Article 23-A of The Fair Chance Act is to allow an opportunity to provide context around a conviction and allow the situation to be understood in its entirety. ", serious) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, rehab ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "I have been working to move my life in a direction that I believe is more representative of who I am. ", rehab, " All of these factors demonstrate the growth I've experienced since the offense.") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, safetyIssue ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "I hope this letter has provided more clarity and insight into who I am and how I've grown as a person. ", safetyIssue, " I am confident that I will be a great ", position, " and that I can contribute to the overall success at ", company, ". Please don't hesitate to reach me at", email, " if you have any further questions. Thank you again for taking the time to read this letter and allowing me the opportunity to show why I'd be a great addition to your team.") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "I hope this letter has provided more clarity and insight into who I am and how I've grown as a person.I am confident that I will be a great ", position, " and that I can contribute to the overall success at", company, ". Please don't hesitate to reach me at ", email, " if you have any further questions. Thank you again for taking the time to read this letter and allowing me the opportunity to show why I'd be a great addition to your team.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1025,8 +1029,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var NextSteps = function NextSteps() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "nextSteps"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Have your rights been violated? What can you do?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "You Can:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Call 311 and ask for Commission on Human Rights.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Leave an anonymous tip or file a complaint.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Contact an Attorney. Here are some places to start:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Cornell University, Industrial and Labor Relations", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "(866)470-1922")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "VOCAL-NY", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "(551)427-6280")))));
+    className: "page-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Have your rights been violated? What can you do?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "You Can:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Call 311 and ask for Commission on Human Rights.", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "Leave an anonymous tip or file a complaint.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Contact an Attorney. Here are some places to start:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "Cornell University, Industrial and Labor Relations", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "(866)470-1922")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "VOCAL-NY", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", null, "(551)427-6280")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (NextSteps);
