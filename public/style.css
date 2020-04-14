@@ -322,6 +322,10 @@ form div {
   color: white;
 }
 
+.starting:hover {
+  color: rgb(177, 202, 238);
+}
+
 .page-container h4 {
   color: #31836e;
   padding-left: 3vw;
