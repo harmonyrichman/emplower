@@ -467,7 +467,7 @@ function (_Component) {
         className: "checklist"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Create Your Letter"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Please fill out each piece that is relevant to you. Remember- this is your chance to take ownership of your story. What will help your potential future employer understand why you are the best candidate for the position?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
         align: "center"
-      }, "* * *Make sure these fields are filled out"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      }, "***Make sure these fields are filled out"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         onSubmit: this.handleSubmit
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "***Today's Date: "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",

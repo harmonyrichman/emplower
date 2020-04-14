@@ -69,7 +69,7 @@ class Checklist extends Component {
         </h3>
 
         <h4 align="center">
-          &#42; &#42; &#42;Make sure these fields are filled out
+          &#42;&#42;&#42;Make sure these fields are filled out
         </h4>
 
         <form onSubmit={this.handleSubmit}>
