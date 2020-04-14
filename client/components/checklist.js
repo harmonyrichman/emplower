@@ -68,9 +68,13 @@ class Checklist extends Component {
           for the position?
         </h3>
 
+        <h4 align="center">
+          &#42; &#42; &#42;Make sure these fields are filled out
+        </h4>
+
         <form onSubmit={this.handleSubmit}>
           <div>
-            <h4>Today's Date</h4>
+            <h4>&#42;&#42;&#42;Today's Date: </h4>
             <input
               type="text"
               name="date"
@@ -80,7 +84,7 @@ class Checklist extends Component {
             />
             <br />
             <br />
-            <h4>The company you are applying to:</h4>
+            <h4>&#42;&#42;&#42;The company you are applying to: </h4>
             <input
               type="text"
               name="company"
@@ -91,7 +95,7 @@ class Checklist extends Component {
             <br />
             <br />
 
-            <h4>The position you are applying for:</h4>
+            <h4>&#42;&#42;&#42;The position you are applying for: </h4>
             <input
               type="text"
               name="position"
@@ -114,8 +118,8 @@ class Checklist extends Component {
             <br /> */}
 
             <h4>
-              Why are you qualified for the specific responsibilities of this
-              position?
+              &#42;&#42;&#42;Why are you qualified for the specific
+              responsibilities of this position?
             </h4>
             <input
               type="text"
@@ -128,8 +132,8 @@ class Checklist extends Component {
             <br />
 
             <h4>
-              How does your charge NOT affect your ability to be successful in
-              this position?
+              &#42;&#42;&#42;How does your charge NOT affect your ability to be
+              successful in this position?
             </h4>
             <input
               type="text"

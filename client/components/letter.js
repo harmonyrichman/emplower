@@ -20,7 +20,7 @@ const Letter = props => {
   } = props
 
   return (
-    <div className="letter">
+    <div className="page-container">
       <div align="right">
         <h5>{date}</h5>
       </div>

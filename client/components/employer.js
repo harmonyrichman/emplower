@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 const Employer = () => {
   return (
-    <div className="employer">
+    <div className="page-container">
       <h1>After Your Interview, Has the Employer...</h1>
       <ol>
         <li>
@@ -41,11 +41,9 @@ const Employer = () => {
         </li>
       </ol>
       <div>
-        <div className="fairButton">
+        <div className="letterButton">
           <Link to="/nextsteps">
-            <button type="button">
-              If you think your rights have been violated
-            </button>
+            <button type="button">They Have Not</button>
           </Link>
         </div>
       </div>
