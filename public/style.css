@@ -99,10 +99,6 @@ form div {
   justify-content: center;
 }
 
-.testBranch {
-  color: blue;
-}
-
 .moreinfo img {
   width: 2em;
   height: 3em;
@@ -147,18 +143,6 @@ form div {
 
 /* HOMEPAGE START */
 
-.homepage {
-  border: 3px ridge #0f4d2e;
-  background-color: #d3fae2;
-  width: 26vw;
-  height: 24vw;
-  object-fit: contain;
-  /* margin: 50px; */
-
-  margin: auto;
-  /* display: float; */
-  /* justify-content: center; */
-}
 .homepage h1 {
   display: flex;
   justify-content: center;
@@ -166,21 +150,12 @@ form div {
   animation-duration: 1s;
   animation-iteration-count: 3;
 }
-/* .homepage bounce {
-  0% {
-    top: 0px;
-  },
-  50% {
-    top: 249px;
-    width: 130px;
-    height: 70px;
-  },
-  100% {
-    top: 0px;
-  }
-} */
 
 .homepage {
+  border: 3px ridge #0f4d2e;
+  background-color: #d3fae2;
+  object-fit: contain;
+  margin: auto;
   height: auto;
   max-width: 20vw;
   margin: auto;
@@ -189,37 +164,33 @@ form div {
 }
 
 .homepage img {
-  /* height: 9vw; */
   width: auto;
-  /* width: 8vw; */
-  /* display: flex;
-  justify-items: center; */
 }
 
 /* HOMEPAGE END */
 
 /* FAIR CHANCE START */
 
-.fairchance {
+.page-container {
   margin: auto;
   margin-top: 2.3vw;
   width: 80%;
-  /* border: 1em double #304979; */
   padding: 1em;
   background-color: #e0eee7;
+  border-radius: 2%;
 }
 
-#header {
+/* #header {
   background-color: coral;
-}
+} */
 
-.fairchance h1 {
+.page-container h1 {
   font-family: 'Abril Fatface', cursive;
   color: #516489;
   text-align: center;
 }
 
-.fairchance h2 {
+.page-container h2 {
   color: #516489;
   padding-left: 2vw;
 }
@@ -290,7 +261,7 @@ form div {
   color: white;
 }
 
-.fairchance .topic:hover {
+.page-container .topic:hover {
   -webkit-animation: swing 0.7s ease;
   animation: swing 0.7s ease;
   -webkit-animation-iteration-count: 5;
@@ -298,23 +269,23 @@ form div {
   color: white;
 }
 
-.fairchance h4 {
+.page-container h4 {
   color: #31836e;
   font-size: 1.6vw;
   padding-left: 3vw;
 }
 
-.fairchance li {
+.page-container li {
   color: #31836e;
 }
 
-.fairButton {
+.page-button {
   display: flex;
   justify-content: center;
-  background-color: #e0eee7 !important;
+  /* background-color: #e0eee7 !important; */
 }
 
-.fairchance button {
+.page-container button {
   color: #173570;
   background-color: #cfdcfc;
   font-size: 1.2vw;
@@ -326,7 +297,7 @@ form div {
   border: 2px dotted #173570;
 }
 
-.fairchance button:hover {
+.page-container button:hover {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
   transform: scale(1.3);
